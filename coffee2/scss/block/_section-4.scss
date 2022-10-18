@@ -1,0 +1,35 @@
+.how{
+    margin-top: 200px;
+    h4{
+        @include h4-text;
+        color: $prime5-color;
+        opacity: 0.9;
+        padding-left: 90px
+    }
+    &_cards{
+        @include innercontent;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 6em;
+      &_card{
+         h2{
+           color: $prime2-color;
+           @include h1-text;
+         }
+         h3{
+          @include h3-text
+         }
+         p{
+            @include body;
+            opacity: 0.8;
+         }
+      }
+    }
+    .btn{
+       margin: 64px 90px;
+       @include button;
+       &:hover{
+       @include buttonhover;
+       }
+    }
+}

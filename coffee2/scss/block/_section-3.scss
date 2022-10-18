@@ -1,0 +1,49 @@
+.why{
+    background-color: $prime6-color;
+    border-radius: 10px;
+    width: 1280px;
+    height: 577px;
+    @include columncontent;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+    // position: relative;
+    &_text{
+        h3{
+            @include h3-text;
+        }
+        p{
+            @include body;
+            opacity: 0.8;
+        }
+    }
+    &_cards{
+        @include innercontent;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        flex-wrap: nowrap;
+        gap: 30px;
+        padding-top: 50px;
+        &_card{
+            @include columncontent;
+            background-color: $prime-color;
+            align-items:center;
+            text-align:center;
+            color: white;
+            width: 350px;
+            height: 382px;
+            border-radius:  8px;
+            padding-top: 72px;
+            h4{
+                @include h4-text;
+                margin: 50px 0px  0px;
+            }
+            p{
+                @include body;
+                opacity: 0.8;
+            }
+        }
+    }
+}

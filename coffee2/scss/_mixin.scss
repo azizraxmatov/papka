@@ -1,0 +1,69 @@
+@mixin maincontent{
+  display: flex;
+  flex-direction: row;
+  // align-items:center;
+  // justify-content: center;
+}
+@mixin ordinar {
+  margin: 0;
+  padding: 0;
+}
+@mixin innercontent{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+@mixin columncontent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  // align-items: center;
+}
+@mixin img {
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+@mixin body {
+  font-family: "Barlow" ;
+  font-size: 16px;
+  line-height: 26px;
+}
+@mixin button {
+  width: 217px;
+  height: 56px;
+  background-color:$button-default;
+  border-radius: 6px;
+  color: white;
+  font-family: $font-big;
+  font-size: 18px;
+  border-style: none;
+  
+}
+@mixin buttonhover {
+  background-color: $button-hovered;
+}
+@mixin h1-text {
+  font-family: 'Fraunces';
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: 900;
+
+} 
+
+@mixin h2-text {
+  font-family: 'Fraunces';
+  font-size: 40px;
+  line-height: 48px;
+}
+@mixin h3-text {
+  font-family: 'Fraunces';
+  font-size: 32px;
+  line-height: 36px;
+}
+@mixin h4-text {
+  font-family: 'Fraunces';
+  font-size: 24px;
+  line-height: 32px;
+}

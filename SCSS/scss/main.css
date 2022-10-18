@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.example .inner {
+  background-color: aqua;
+  width: 150px;
+  height: 150px;
+}
+.example .inner__box {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+.example .enter {
+  width: 200px;
+  height: 200px;
+  background-color: cyan;
+}
+.example .enter__box {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  color: red;
+}/*# sourceMappingURL=main.css.map */

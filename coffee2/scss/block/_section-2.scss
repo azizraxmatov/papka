@@ -8,6 +8,9 @@
         font-size: 150px;
         top: 0px;
         letter-spacing: 5px;
+        color: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     &_kopis {

@@ -1,36 +1,40 @@
-.coffee_made{
+.coffee_made {
     @include maincontent;
     margin-top: 25px;
-   
-    &__text{
+
+    &__text {
         @include columncontent;
         padding: 100px;
         position: absolute;
         z-index: 1;
         gap: 1em;
-         .big-font {
-        color: white;
-        @include h1-text;
-        font-weight: 900;
-        margin: 0 auto;
+
+        .big-font {
+            color: white;
+            @include h1-text;
+            font-weight: 900;
+            margin: 0 auto;
         }
-        p{
+
+        p {
             color: $smalltext-color;
             @include body;
             opacity: 0.8;
             font-weight: 100;
         }
-        .btn{
+
+        .btn {
             @include button;
             margin-top: 51px;
 
-          &:hover{
-             @include buttonhover
-          }
+            &:hover {
+                @include buttonhover
+            }
         }
 
     }
-    &__bg{ 
+
+    &__bg {
         background-image: url(../images/Bitmap.png);
         @include img;
         width: 1280px;
@@ -39,4 +43,4 @@
         position: relative;
         right: 0px;
     }
-} 
+}

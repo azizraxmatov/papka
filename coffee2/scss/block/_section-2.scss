@@ -1,13 +1,14 @@
 .coffee_collection {
     @include columncontent;
     text-align: center;
+
     // position: relative;
-     .big-font {
+    .big-font {
         @include h1-text;
         font-size: 150px;
         top: 0px;
         letter-spacing: 5px;
-      }
+    }
 
     &_kopis {
         @include innercontent;
@@ -16,16 +17,19 @@
         // gap: 0em;
         top: -150px;
         left: 90px;
-         &_sort {
+
+        &_sort {
             @include columncontent;
             text-align: center;
-            h4{
-            margin-bottom: 0;
-            @include h4-text;
+
+            h4 {
+                margin-bottom: 0;
+                @include h4-text;
             }
-            p{
+
+            p {
                 @include body;
             }
-         }
+        }
     }
 }

@@ -1,15 +1,18 @@
-.coffee{
+.coffee {
     padding-top: 25px;
     position: relative;
-    &_navbar{
+
+    &_navbar {
         // display: flex;
         // flex-direction: row;
         // align-items: center;
         @include innercontent;
-        #logo{
+
+        #logo {
             padding-left: 0px;
         }
-        .menu{
+
+        .menu {
             @include innercontent;
             position: absolute;
             right: 0px;
@@ -19,18 +22,21 @@
             font-family: $font-small;
             font-weight: 700;
             list-style: none;
-            &__item{
-                display: flex;                
-               .menu__link{
-                color: $prime5-color;
-                text-decoration: none;
-                &:hover{
-                    color: #333D4B;
-                    cursor: pointer ;
 
+            &__item {
+                display: flex;
+
+                .menu__link {
+                    color: $prime5-color;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #333D4B;
+                        cursor: pointer;
+
+                    }
                 }
-              }
-           }
+            }
         }
     }
 }

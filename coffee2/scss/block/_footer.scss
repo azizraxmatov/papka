@@ -1,26 +1,28 @@
-.footer-content{
+.footer-content {
     padding: 25px;
-  background-color: $prime6-color;
-  @include maincontent;
-  align-items:center;
-  padding-left: 85px;
-  gap: 4em;
-  position: relative;
-   .footer_uls{
-    @include innercontent;
-    text-decoration: none;
-    list-style: none;
-    gap: 1em;
-    font-size: 12px;
-    font-family: $font-small;
-    font-weight: 700;
-    a{
+    background-color: $prime6-color;
+    @include maincontent;
+    align-items: center;
+    padding-left: 85px;
+    gap: 4em;
+    position: relative;
+
+    .footer_uls {
+        @include innercontent;
         text-decoration: none;
-        color:$prime5-color;
+        list-style: none;
+        gap: 1em;
+        font-size: 12px;
+        font-family: $font-small;
+        font-weight: 700;
+
+        a {
+            text-decoration: none;
+            color: $prime5-color;
+        }
     }
-   }
-   
-    .socialmedia{
+
+    .socialmedia {
         @include maincontent;
         gap: 1em;
         list-style: none;
@@ -28,13 +30,14 @@
         right: 100px;
     }
 }
+
 //cards
 // .coffee{
 //     @include maincontent;
 //     flex-wrap: wrap;
 //     gap: 2em;
- 
-    
+
+
 //     .visually-hidden{
 //       position: absolute;
 //       width: 1px;
@@ -71,5 +74,5 @@
 //         font-size: xx-large;
 //        }
 //     }
-   
+
 // }

@@ -1,4 +1,4 @@
-.why{
+.why {
     background-color: $prime6-color;
     border-radius: 10px;
     width: 1280px;
@@ -8,39 +8,45 @@
     text-align: center;
     color: white;
     padding-top: 200px;
+
     // position: relative;
-    &_text{
-        h3{
+    &_text {
+        h3 {
             @include h3-text;
         }
-        p{
+
+        p {
             @include body;
             opacity: 0.8;
         }
     }
-    &_cards{
+
+    &_cards {
         @include innercontent;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         text-align: center;
         flex-wrap: nowrap;
         gap: 30px;
         padding-top: 50px;
-        &_card{
+
+        &_card {
             @include columncontent;
             background-color: $prime-color;
-            align-items:center;
-            text-align:center;
+            align-items: center;
+            text-align: center;
             color: white;
             width: 350px;
             height: 382px;
-            border-radius:  8px;
+            border-radius: 8px;
             padding-top: 72px;
-            h4{
+
+            h4 {
                 @include h4-text;
-                margin: 50px 0px  0px;
+                margin: 50px 0px 0px;
             }
-            p{
+
+            p {
                 @include body;
                 opacity: 0.8;
             }

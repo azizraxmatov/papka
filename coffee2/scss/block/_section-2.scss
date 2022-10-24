@@ -1,26 +1,32 @@
 .coffee_collection {
     @include columncontent;
     text-align: center;
-
-    // position: relative;
+   position: relative;
+   align-items:center;
+   margin: 100px auto;
     .big-font {
         @include h1-text;
+        position: absolute;
+        top: 500px;
         font-size: 150px;
         top: 0px;
         letter-spacing: 5px;
-        color: -webkit-linear-gradient(#eee, #333);
+        background: -webkit-linear-gradient(180deg, #333 0%,#eee 120%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        z-index: 0;
+        white-space: nowrap;
+        height: 100px
     }
 
     &_kopis {
         @include innercontent;
-        position: relative;
         // flex-wrap: nowrap;
         // gap: 0em;
-        top: -150px;
-        left: 90px;
-
+        position: relative;
+        top: 50px;
+        left: 0px;
+        z-index: 1;
         &_sort {
             @include columncontent;
             text-align: center;

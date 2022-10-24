@@ -112,23 +112,35 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  position: relative;
+  align-items: center;
+  margin: 100px auto;
 }
 .coffee_collection .big-font {
   font-family: "Fraunces";
   font-size: 72px;
   line-height: 72px;
   font-weight: 900;
+  position: absolute;
+  top: 500px;
   font-size: 150px;
   top: 0px;
   letter-spacing: 5px;
+  background: -webkit-linear-gradient(180deg, #333 0%, #eee 120%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 0;
+  white-space: nowrap;
+  height: 100px;
 }
 .coffee_collection_kopis {
   display: flex;
   flex-direction: row;
   align-items: center;
   position: relative;
-  top: -150px;
-  left: 90px;
+  top: 50px;
+  left: 0px;
+  z-index: 1;
 }
 .coffee_collection_kopis_sort {
   display: flex;

@@ -1,0 +1,50 @@
+.blog_content {
+    @include columncontent;
+    align-items: center;
+    .h2{
+        color: $prime-color-gr;
+            padding-bottom: 30px;
+            font-size: 50px;
+         margin: 0;
+         padding: 0 0 15px 0;
+            font-family: "SF Pro Rounded";
+            line-height: 59.7px;
+            font-weight: 500;
+    }
+    .blog_menu {
+        list-style: none;
+        @include maincontent;
+        justify-content: space-around;
+        gap: 24px;
+        &_item {
+            width: 371px;
+            height: 395px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            .inner-conent{
+                padding: 15px;
+                 .h3{
+                    font-family: $fontfamily-or;
+                    font-size: $h4-fontsize;
+                    color:$prime-color-gr;
+                    font-weight: 700;
+                    line-height: 28px;
+                    margin: 0 0 10px 0;
+                 }
+                 .border{
+                    border-bottom: 1px solid #F3F4F6;
+                    margin: 0 0 22.64px 0;
+                 }
+                 .p{
+                    color: $greycolor-600;
+                        font-family: $fontfamily-or;
+                        font-size: $h6-fontsize;
+                        line-height: 150%;
+                        margin: 0;
+                        // margin: 0;
+                 }
+            }
+        }
+    }
+}

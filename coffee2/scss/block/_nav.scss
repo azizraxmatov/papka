@@ -1,42 +1,67 @@
 .coffee {
-    padding-top: 25px;
-    position: relative;
-
-    &_navbar {
-        // display: flex;
-        // flex-direction: row;
-        // align-items: center;
-        @include innercontent;
-
-        #logo {
-            padding-left: 0px;
-        }
-
-        .menu {
-            @include innercontent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     
+    @media(max-width:$phone){
+           .logo{
+            color:#fff;
+           }
+           justify-content: center;
+            }
+    .menu{
+        @media (max-width:$phone) {
+            display: flex;
+            flex-direction: column;
+           padding-top: 40px;
+           padding-right: 50px;
             position: absolute;
-            right: 0px;
-            flex-wrap: nowrap;
-            gap: 2em;
-            font-size: 12px;
-            font-family: $font-small;
-            font-weight: 700;
-            list-style: none;
-
-            &__item {
-                display: flex;
-
-                .menu__link {
-                    color: $prime5-color;
-                    text-decoration: none;
-
-                    &:hover {
-                        color: #333D4B;
-                        cursor: pointer;
-
-                    }
-                }
+            left: 0;
+            top: 0;
+            line-height: 0;
+            background-color:#fff;
+            height: 100vh;
+        }
+    }
+    nav ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        
+    a {
+        text-decoration: none;
+         color: gray;
+         font-weight: 100;
+         opacity: 0.8;
+         @include body;
+         line-height: 0;
+    }
+    }
+    .hidden {
+        display: none;
+    }
+    &_label {
+       @media (max-width:$phone) {
+        
+        &::before,
+        &::after {
+            display: block;
+            content:"";
+            width: 15px;
+            height: 3px;
+            background-color:black;
+            margin-bottom: 5px;
+            cursor: pointer;
+            position: relative;
+            left: 100px;
+            top: 0px;
+        }
+      
+        input:checked + & + .coffee_navbar {
+            @media (max-width:$phone) {
+                transform: translateX(0);
             }
         }
+       }
     }
 }

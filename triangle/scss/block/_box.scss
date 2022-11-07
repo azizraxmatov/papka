@@ -1,0 +1,14 @@
+.block {
+    // @include gabarites;
+      // .box {
+    // @include styleBox(bottom);
+    //    @for $i from 1 through 10 {
+    //     &:nth-child(#{$i}){
+    //       background-color: lighten(blueviolet, $i * 3%)
+    //   }
+    // }
+    // }
+    .triangle2{
+      @include triangle2(15px,darkcyan, bottom)
+    }
+}

@@ -1,0 +1,156 @@
+.featured_content {
+    @include maincontent;
+    justify-content: space-between;
+    &_imgblock {
+        @include columncontent;
+        background-image: url(../images/bgflower.png);
+        @include img;
+        width: 439px;
+        height: 639px;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        left: -7.57%;
+        gap: 18px;
+        padding-left: 200px;
+        padding-bottom: 130px;
+
+        &_h2 {
+            color: $prime-color-gr;
+            font-size: 50px;
+            margin-bottom: 0;
+            font-family: "SF Pro Rounded";
+            line-height: 89.84%;
+            font-weight: 600;
+        }
+
+        &_link {
+            @include link;
+            @include innercontent;
+            font-family: 'Quicksand', sans-serif;
+            font-size: $h6-fontsize;
+            font-weight: 700;
+            &:hover{
+                @include linkhover;
+            }
+
+        }
+    }
+
+    &_cardblock {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        @include maincontent;
+        gap: 5px;
+        display: block;
+        .cards{
+            display: flex;
+        .card {
+            
+            position: relative;
+
+            &_content {
+                position: absolute;
+                width: 375px;
+                height: 91px;
+                bottom: 0;
+                left: 0;
+                bottom: 10px;
+                background: rgba(255, 255, 255, 0.3);
+                backdrop-filter: blur(7.5px);
+                border-radius: 0px 20px;
+                padding: 15px 0 0 15px;
+
+                &_div1 {
+                    @include maincontent;
+                    gap: 5px;
+
+                    h4 {
+                        font-family: $fontfamily-or;
+                        font-size: $h4-fontsize;
+                        margin: 0;
+                    }
+
+                    .price {
+                        width: 32px;
+                        height: 15px; 
+                        padding: 2px 6px 2px 6px;
+                        font-family: $fontfamily-or;
+                        background-color: $prime-color-gr;
+                        color: $prime-color-w;
+                        border-radius: 8px;
+                        font-size: 10px;
+                        margin-top: 2px;
+                        @include innercontent;
+                        align-items: center;
+                    }
+                }
+
+                &_div2 {
+                    @include maincontent;
+                    gap: 40px;
+                    align-items: flex-start;
+                    margin-top: 0px;
+
+                    .p {
+                        color: $greycolor-500;
+                        font-family: $fontfamily-or;
+                        font-size: $h7-fontsize;
+                        line-height: 19.6px;
+                        margin: 0;
+                    }
+
+                    .btn {
+                        background-color: transparent;
+                        border: none;
+                        position: relative;
+                        bottom: 22.5px;
+                        left: 0px;
+                        cursor: pointer;
+                    }
+                   
+                }
+
+
+            }
+
+            &_content_2 {
+                position: absolute;
+                width: 375px;
+                bottom: 0;
+                left: 0;
+                bottom: 10px;
+                background: rgba(255, 255, 255, 0.75);
+                backdrop-filter: blur(12.5px);
+                border-radius: 0px 20px;
+                padding: 13px 0 0 15px;
+
+            }
+        }
+        
+      
+    }
+    .card_menu{
+        @include maincontent;
+        justify-content: center;
+        margin: 50px 50px 0 0;
+        gap: 1px;
+        &_item{
+            list-style: none;
+           &_btn{
+             border:none;
+             width: 8px;
+             height: 8px;
+             border-radius: 50%; 
+             cursor: pointer;
+             background-color:transparent;
+             color: $prime-color-gr;    
+               :hover{
+                color:$greycolor-400;
+               }
+            }
+        }
+     }
+    }
+}

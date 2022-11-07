@@ -1,0 +1,74 @@
+@font-face {font-family: "SF Pro Rounded"; src: url("//db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.eot"); src: url("//db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.woff") format("woff"), url("//db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.svg#SF Pro Rounded") format("svg"); }
+
+.hero_content{
+    // @include maincontent;
+    display:flex;
+    flex-direction: row;
+    padding-top: 70px;
+    @media(max-width:$phone){
+    display: block;
+    }
+.herotext_block{
+    // @include columncontent;
+    padding: 200px 100px 100px 80px;
+    @media(max-width:$tablet){
+        padding: 0 0 100px 0px;
+    }
+    &_h2{
+        color: $prime-color-gr;
+        font-size: 96px;
+        @media(max-width:$phone){
+        font-size: 40px;
+    }
+        // font-family: $fontfamily-r;
+        margin-bottom: 30px;
+        font-family: "SF Pro Rounded";
+        line-height: 89.84%;
+        font-weight: 500;
+    }
+    &_p{
+        color: $greycolor-400;
+        font-family: $fontfamily-or;
+        font-size: $h7-fontsize;
+        line-height: 19.6px;
+    }
+}
+.heroimg_block{
+    @media(max-width:$phone){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 223px;
+        height: 126px;
+    }
+      padding-top: 100px;
+     @include img;
+    background-image: url(../images/Ellipse\ 1.png);
+    width: 775px;
+    height: 801px;
+    position: relative;
+   border-radius:50px 0 0 450px;
+   @media(max-width:$tablet){
+    padding: 0;
+    width: 674px;
+    height: 465px;
+    border-radius:0;
+    padding: 0px;
+    background-size: contain;
+   }
+    &_img{
+      position: relative;
+      right: 40px;
+      @media(max-width:$tablet){
+        width: 290px;
+        height: 196px;
+        top: 80px;
+      }
+      @media(max-width:$phone){
+        width: 123px;
+        height: 83px;
+        top: 80px;
+      }
+    }
+}
+}

@@ -1,0 +1,684 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  @import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+  @import url("https://db.onlinewebfonts.com/c/ead4092f880f75ff0883ced1856b2c37?family=SF+Pro+Rounded");
+  @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:opsz,wght@9..144,900&family=Quicksand:wght@700&family=Roboto:wght@400;500;700&family=Work+Sans:ital,wght@1,200&display=swap");
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.commerce_header {
+  display: flex;
+  flex-direction: row;
+}
+.commerce_header_inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(12.5px);
+          backdrop-filter: blur(12.5px);
+}
+@media (max-width: 834px) {
+  .commerce_header_inner {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 375px) {
+  .commerce_header_inner {
+    justify-content: space-around;
+  }
+}
+.commerce_header_inner .logo {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  left: 104px;
+  align-items: center;
+}
+.commerce_header_inner .logo .logo_text {
+  font-family: "SF Pro Display", semibold;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1F2937;
+}
+.commerce_header_inner .hidden {
+  display: none;
+}
+.commerce_header_inner_label {
+  position: absolute;
+  top: 25px;
+}
+@media (max-width: 375px) {
+  .commerce_header_inner_label::before, .commerce_header_inner_label::after {
+    display: flex;
+    content: "";
+    width: 15px;
+    height: 3px;
+    background-color: rgb(8, 8, 8);
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 100px;
+    top: 0px;
+  }
+}
+@media (max-width: 375px) and (max-width: 834px) {
+  input:checked + .commerce_header_inner_label + .header_nav {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 375px) and (max-width: 375px) {
+  input:checked + .commerce_header_inner_label + .header_nav {
+    transform: translateX(0);
+  }
+}
+.commerce_header_inner .header_menu {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
+}
+@media (max-width: 375px) {
+  .commerce_header_inner .header_menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-right: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 0;
+    background-color: rgb(10, 10, 10);
+    height: 100vh;
+  }
+}
+.commerce_header_inner .header_menu_item {
+  list-style: none;
+}
+.commerce_header_inner .header_menu_item .header_menu_link {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  font-family: "SF Pro Display", semibold;
+}
+.commerce_header_inner .header_menu-2 {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+  gap: 11.95px;
+}
+
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("//db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.eot");
+  src: url("//db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.woff") format("woff"), url("//db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.svg#SF Pro Rounded") format("svg");
+}
+.hero_content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 70px;
+}
+@media (max-width: 375px) {
+  .hero_content {
+    display: block;
+  }
+}
+.hero_content .herotext_block {
+  padding: 200px 100px 100px 80px;
+}
+@media (max-width: 834px) {
+  .hero_content .herotext_block {
+    padding: 0 0 100px 0px;
+  }
+}
+.hero_content .herotext_block_h2 {
+  color: #5FD788;
+  font-size: 96px;
+  margin-bottom: 30px;
+  font-family: "SF Pro Rounded";
+  line-height: 89.84%;
+  font-weight: 500;
+}
+@media (max-width: 375px) {
+  .hero_content .herotext_block_h2 {
+    font-size: 40px;
+  }
+}
+.hero_content .herotext_block_p {
+  color: #9CA3AF;
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  line-height: 19.6px;
+}
+.hero_content .heroimg_block {
+  padding-top: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/Ellipse\ 1.png);
+  width: 775px;
+  height: 801px;
+  position: relative;
+  border-radius: 50px 0 0 450px;
+}
+@media (max-width: 375px) {
+  .hero_content .heroimg_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 223px;
+    height: 126px;
+  }
+}
+@media (max-width: 834px) {
+  .hero_content .heroimg_block {
+    padding: 0;
+    width: 674px;
+    height: 465px;
+    border-radius: 0;
+    padding: 0px;
+    background-size: contain;
+  }
+}
+.hero_content .heroimg_block_img {
+  position: relative;
+  right: 40px;
+}
+@media (max-width: 834px) {
+  .hero_content .heroimg_block_img {
+    width: 290px;
+    height: 196px;
+    top: 80px;
+  }
+}
+@media (max-width: 375px) {
+  .hero_content .heroimg_block_img {
+    width: 123px;
+    height: 83px;
+    top: 80px;
+  }
+}
+
+.categories_content {
+  margin-top: 150px;
+}
+.categories_content .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+.categories_content .menu_link {
+  display: flex;
+  flex-direction: column;
+  width: 273.9px;
+  height: 274px;
+  background-color: #F9FAFB;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  gap: 17px;
+  color: #5FD788;
+  text-decoration: none;
+}
+.categories_content .menu_link:hover {
+  background-color: #5FD788;
+  color: #FFFFFF;
+}
+
+.imgtext_content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+}
+.imgtext_content_imgblock {
+  background-image: url(../images/ellipse2.png);
+  width: 405px;
+  height: 769.54px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+}
+.imgtext_content_imgblock_img {
+  padding: 100px 0 0 60px;
+}
+.imgtext_content_textblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  text-align: right;
+  position: absolute;
+  right: 91px;
+  gap: 28px;
+}
+.imgtext_content_textblock_h2 {
+  color: #5FD788;
+  font-size: 50px;
+  margin-bottom: 0;
+  font-family: "SF Pro Rounded";
+  line-height: 89.84%;
+  font-weight: 500;
+}
+.imgtext_content_textblock_p {
+  color: #9CA3AF;
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  line-height: 19.6px;
+  margin-bottom: 0;
+}
+.imgtext_content_textblock_link {
+  width: 274px;
+  height: 40px;
+  background-color: #5FD788;
+  border-radius: 8px;
+  padding: 12px 30px 12px 30px;
+  color: white;
+  text-decoration: none;
+  font-family: "Fraunces";
+  font-size: 18px;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.imgtext_content_textblock_link:hover {
+  background-color: #FFFFFF;
+  color: black;
+  border: 1px solid rgb(219, 219, 219);
+}
+
+.featured_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.featured_content_imgblock {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/bgflower.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 439px;
+  height: 639px;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  left: -7.57%;
+  gap: 18px;
+  padding-left: 200px;
+  padding-bottom: 130px;
+}
+.featured_content_imgblock_h2 {
+  color: #5FD788;
+  font-size: 50px;
+  margin-bottom: 0;
+  font-family: "SF Pro Rounded";
+  line-height: 89.84%;
+  font-weight: 600;
+}
+.featured_content_imgblock_link {
+  width: 274px;
+  height: 40px;
+  background-color: #5FD788;
+  border-radius: 8px;
+  padding: 12px 30px 12px 30px;
+  color: white;
+  text-decoration: none;
+  font-family: "Fraunces";
+  font-size: 18px;
+  border-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.featured_content_imgblock_link:hover {
+  background-color: #FFFFFF;
+  color: black;
+  border: 1px solid rgb(219, 219, 219);
+}
+.featured_content_cardblock {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  display: block;
+}
+.featured_content_cardblock .cards {
+  display: flex;
+}
+.featured_content_cardblock .cards .card {
+  position: relative;
+}
+.featured_content_cardblock .cards .card_content {
+  position: absolute;
+  width: 375px;
+  height: 91px;
+  bottom: 0;
+  left: 0;
+  bottom: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+  border-radius: 0px 20px;
+  padding: 15px 0 0 15px;
+}
+.featured_content_cardblock .cards .card_content_div1 {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.featured_content_cardblock .cards .card_content_div1 h4 {
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  margin: 0;
+}
+.featured_content_cardblock .cards .card_content_div1 .price {
+  width: 32px;
+  height: 15px;
+  padding: 2px 6px 2px 6px;
+  font-family: "SF Pro Display";
+  background-color: #5FD788;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-size: 10px;
+  margin-top: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+.featured_content_cardblock .cards .card_content_div2 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 0px;
+}
+.featured_content_cardblock .cards .card_content_div2 .p {
+  color: #6B7280;
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  line-height: 19.6px;
+  margin: 0;
+}
+.featured_content_cardblock .cards .card_content_div2 .btn {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  bottom: 22.5px;
+  left: 0px;
+  cursor: pointer;
+}
+.featured_content_cardblock .cards .card_content_2 {
+  position: absolute;
+  width: 375px;
+  bottom: 0;
+  left: 0;
+  bottom: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-backdrop-filter: blur(12.5px);
+          backdrop-filter: blur(12.5px);
+  border-radius: 0px 20px;
+  padding: 13px 0 0 15px;
+}
+.featured_content_cardblock .card_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 50px 0 0;
+  gap: 1px;
+}
+.featured_content_cardblock .card_menu_item {
+  list-style: none;
+}
+.featured_content_cardblock .card_menu_item_btn {
+  border: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  color: #5FD788;
+}
+.featured_content_cardblock .card_menu_item_btn :hover {
+  color: #9CA3AF;
+}
+
+.soaps_content {
+  display: flex;
+  flex-direction: row;
+  background-color: #5FD788;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/nuqta.png);
+}
+.soaps_content_text {
+  padding: 70px;
+}
+.soaps_content_text .h2 {
+  color: #FFFFFF;
+  padding-bottom: 30px;
+  font-size: 50px;
+  margin-bottom: 0;
+  font-family: "SF Pro Rounded";
+  line-height: 59.7px;
+  font-weight: 500;
+}
+.soaps_content_text_link {
+  width: 274px;
+  height: 40px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  color: black;
+  font-family: "Fraunces";
+  font-size: 18px;
+  border-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.soaps_content_text_link:hover {
+  background-color: #5FD788;
+  color: white;
+  border: 1px solid rgb(219, 219, 219);
+}
+.soaps_content_img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.trends_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.trends_content_imgblock {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/bgflower2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+  width: 567px;
+  height: 560px;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  left: 0%;
+  gap: 18px;
+  padding-left: 100px;
+  padding-bottom: 120px;
+}
+
+.blog_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog_content .h2 {
+  color: #5FD788;
+  padding-bottom: 30px;
+  font-size: 50px;
+  margin: 0;
+  padding: 0 0 15px 0;
+  font-family: "SF Pro Rounded";
+  line-height: 59.7px;
+  font-weight: 500;
+}
+.blog_content .blog_menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 24px;
+}
+.blog_content .blog_menu_item {
+  width: 371px;
+  height: 395px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.blog_content .blog_menu_item .inner-conent {
+  padding: 15px;
+}
+.blog_content .blog_menu_item .inner-conent .h3 {
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  color: #5FD788;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0 0 10px 0;
+}
+.blog_content .blog_menu_item .inner-conent .border {
+  border-bottom: 1px solid #F3F4F6;
+  margin: 0 0 22.64px 0;
+}
+.blog_content .blog_menu_item .inner-conent .p {
+  color: #4B5563;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: #F3F4F6;
+}
+@media (max-width: 375px) {
+  .footer_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer_content .logo {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 100px;
+  margin-top: 26px;
+}
+.footer_content .logo_text {
+  padding-left: 10px;
+  font-family: "SF Pro Display", semibold;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1F2937;
+}
+.footer_content .footer_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 33px;
+  padding-bottom: 84px;
+  gap: 50px;
+  padding-left: 150px;
+  position: relative;
+}
+.footer_content .footer_nav .p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  padding-right: 100px;
+  text-align: center;
+}
+.footer_content .footer_nav .footer_nav_div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 0px;
+}
+.footer_content .footer_nav .footer_nav_div .h3 {
+  font-size: 14px;
+  font-family: "SF Pro Display";
+  color: #5FD788;
+  font-weight: 600;
+  margin: 0;
+}
+.footer_content .footer_nav .footer_nav_div .footer_menu {
+  margin: 4px 0 0 0;
+  list-style: none;
+  padding: 0;
+}
+.footer_content .footer_nav .footer_nav_div .footer_menu_item {
+  gap: 50px;
+  line-height: 16.2px;
+}
+.footer_content .footer_nav .footer_nav_div .footer_menu_item_link {
+  text-decoration: none;
+  color: black;
+  color: #9CA3AF;
+  font-family: "SF Pro Display";
+  font-size: 14px;
+}/*# sourceMappingURL=main.css.map */

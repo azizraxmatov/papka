@@ -1,0 +1,113 @@
+.commerce_header {
+    @include maincontent;
+
+    &_inner {
+        @media(max-width:$tablet) {
+            justify-content: space-around;
+        }
+
+        @media(max-width:$phone) {
+            justify-content: space-around;
+            
+        }
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        @include maincontent;
+        align-items:center;
+        justify-content: space-between;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12.5px);
+
+        .logo {
+            position: relative;
+            text-decoration: none;
+            color: black;
+            @include maincontent;
+            gap: 12px;
+            left: 104px;
+            align-items: center;
+
+            .logo_text {
+                font-family: $fontfamily-l;
+                font-size: $h8-fontsize;
+                font-weight: 600;
+                color: $greycolor-800;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        &_label {
+            position: absolute;
+            top: 25px;
+            // display: none;
+            @media (max-width:$phone) {
+
+                &::before,
+                &::after {
+                    display: flex;
+                    content: "";
+                    width: 15px;
+                    height: 3px;
+                    background-color: rgb(8, 8, 8);
+                    margin-bottom: 5px;
+                    cursor: pointer;
+                    position: relative;
+                    left: 100px;
+                    top: 0px;
+                }
+
+                input:checked+&+.header_nav {
+                    @media (max-width:$tablet) {
+                        transform: translateX(0);
+                    }
+                    @media (max-width:$phone) {
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+
+        .header_menu {
+            @include maincontent;
+            gap: 10px;
+            list-style: none;
+
+            @media (max-width:$phone) {
+                display: flex;
+                flex-direction: column;
+                padding-top: 40px;
+                padding-right: 50px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                line-height: 0;
+                background-color: rgb(10, 10, 10);
+                height: 100vh;
+            }
+
+            &_item {
+                list-style: none;
+
+                .header_menu_link {
+                    text-decoration: none;
+                    color: black;
+                    font-size: $h8-fontsize;
+                    font-family: $fontfamily-l;
+                }
+            }
+        }
+
+        .header_menu-2 {
+            @include maincontent;
+            padding-right: 10px;
+            gap: 11.95px;
+        }
+    }
+}

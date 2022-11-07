@@ -1,0 +1,49 @@
+.smth{
+
+.sun{
+    // display: flex;
+    // flex-direction: column;
+    position: absolute;
+    top: 0;
+    margin-left: 300px;
+    // border-radius: 50px;
+    // border: 50px solid red;
+    width: 300px;
+    height: 300px;
+    animation-name: ball;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    background-image: url(../images/natural-energy-source-the-sun-transparent-photos-3.png
+    );
+    border-radius:50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+@keyframes ball{
+   0%{
+    // transform:rotateY('angle');
+    top: 0vh;
+
+   }
+   50%{
+    top:45vh;
+   }
+   100%{
+    top: 0vh;
+   }
+  
+}
+.mountain{
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  width: 100vh;
+   animation-name: manimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+
+}
+}

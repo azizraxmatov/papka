@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.smth .sun {
+  position: absolute;
+  top: 0;
+  margin-left: 300px;
+  width: 300px;
+  height: 300px;
+  -webkit-animation-name: ball;
+          animation-name: ball;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  background-image: url(../images/natural-energy-source-the-sun-transparent-photos-3.png);
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+@-webkit-keyframes ball {
+  0% {
+    top: 0vh;
+  }
+  50% {
+    top: 45vh;
+  }
+  100% {
+    top: 0vh;
+  }
+}
+@keyframes ball {
+  0% {
+    top: 0vh;
+  }
+  50% {
+    top: 45vh;
+  }
+  100% {
+    top: 0vh;
+  }
+}
+.smth .mountain {
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  width: 100vh;
+  -webkit-animation-name: manimation;
+          animation-name: manimation;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}/*# sourceMappingURL=main.css.map */

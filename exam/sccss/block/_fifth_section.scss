@@ -1,0 +1,38 @@
+.soaps_content{
+    @include maincontent;
+    background-color:$prime-color-gr;
+    @include img;
+    background-image: url(../images/nuqta.png);
+    &_text{
+       padding: 70px;
+        .h2{
+            color: $prime-color-w;
+            padding-bottom: 30px;
+            font-size: 50px;
+            margin-bottom: 0;
+            font-family: "SF Pro Rounded";
+            line-height: 59.7px;
+            font-weight: 500;
+        }
+        &_link{
+            @include link-light;
+            @include innercontent;
+            font-family: 'Quicksand', sans-serif;
+            font-size: $h6-fontsize;
+            font-weight: 700;
+            // margin-left: 50px;
+            &:hover{
+                @include linkhover-light;
+
+            }
+
+        }
+    }
+    &_img{
+             display: flex;
+             flex-direction: row;
+             align-items:center;
+             position: relative;
+             
+    }
+}

@@ -15,46 +15,71 @@ body {
 }
 
 .coffee {
-  padding-top: 25px;
-  position: relative;
-}
-.coffee_navbar {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
-.coffee_navbar #logo {
-  padding-left: 0px;
+@media (max-width: 576px) {
+  .coffee .menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-right: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 0;
+    background-color: #fff;
+    height: 100vh;
+  }
 }
-.coffee_navbar .menu {
+.coffee nav ul {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: absolute;
-  right: 0px;
-  flex-wrap: nowrap;
-  gap: 2em;
-  font-size: 12px;
-  font-family: "Barlow";
-  font-weight: 700;
+  gap: 30px;
   list-style: none;
 }
-.coffee_navbar .menu__item {
-  display: flex;
-}
-.coffee_navbar .menu__item .menu__link {
-  color: #83888F;
+.coffee nav ul a {
   text-decoration: none;
+  color: gray;
+  font-weight: 100;
+  opacity: 0.8;
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 26px;
+  line-height: 0;
 }
-.coffee_navbar .menu__item .menu__link:hover {
-  color: #333D4B;
-  cursor: pointer;
+.coffee .hidden {
+  display: none;
+}
+@media (max-width: 576px) {
+  .coffee_label::before, .coffee_label::after {
+    display: block;
+    content: "";
+    width: 15px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 100px;
+    top: 0px;
+  }
+}
+@media (max-width: 576px) and (max-width: 576px) {
+  input:checked + .coffee_label + .coffee_navbar {
+    transform: translateX(0);
+  }
 }
 
 .coffee_made {
   display: flex;
   flex-direction: row;
-  margin-top: 25px;
+  margin-top: 0px;
+}
+@media (max-width: 576px) {
+  .coffee_made {
+    margin-top: 100px;
+  }
 }
 .coffee_made__text {
   display: flex;

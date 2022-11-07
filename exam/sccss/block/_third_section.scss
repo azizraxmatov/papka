@@ -1,0 +1,57 @@
+.imgtext_content {
+    @include maincontent;
+    padding-top: 100px;
+
+    &_imgblock {
+        background-image: url(../images/ellipse2.png);
+        width: 405px;
+        height: 769.54px;
+        @include img;
+        background-size: contain;
+
+        &_img {
+            padding: 100px 0 0 60px
+        }
+    }
+
+    &_textblock {
+        // @include columncontent;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        text-align: right;
+        position: absolute;
+        right: 91px;
+        gap: 28px;
+        &_h2 {
+            color: $prime-color-gr;
+            font-size: 50px;
+            // font-family: $fontfamily-r;
+            margin-bottom: 0;
+            font-family: "SF Pro Rounded";
+            line-height: 89.84%;
+            font-weight: 500;
+        }
+
+        &_p {
+            color: $greycolor-400;
+            font-family: $fontfamily-or;
+            font-size: $h7-fontsize;
+            line-height: 19.6px;
+            margin-bottom: 0;
+        }
+
+        &_link {
+            @include link;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+
+            &:hover {
+                @include linkhover;
+            }
+        }
+    }
+}

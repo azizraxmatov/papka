@@ -1,0 +1,25 @@
+.trends_content {
+    @include maincontent;
+    justify-content: space-between;
+    margin-top: 100px;
+    &_imgblock {
+        @include columncontent;
+        background-image: url(../images/bgflower2.png);
+        @include img;
+        background-size: contain;
+        width: 567px;
+        height: 560px;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        left: 0%;
+        gap: 18px;
+        padding-left: 100px;
+        padding-bottom: 120px;
+        
+
+        
+    }
+
+   
+}

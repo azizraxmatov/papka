@@ -1,0 +1,28 @@
+.categories_content{
+    margin-top: 150px;
+    .menu{
+        @include maincontent;
+        justify-content: center;
+        list-style: none;
+      
+        &_link{
+            display: flex;
+            flex-direction: column;
+            width: 273.9px;
+            height: 274px;
+            background-color:$greycolor-50;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 0px 20px;
+            @include columncontent;
+            place-content: center;
+            align-items:center;
+            gap: 17px;
+            color:$prime-color-gr;
+            text-decoration: none;
+            &:hover{
+                background-color:$prime-color-gr;
+                color:$prime-color-w;
+            }
+        }
+    }
+}

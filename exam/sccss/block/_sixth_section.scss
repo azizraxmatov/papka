@@ -2,6 +2,7 @@
     @include maincontent;
     justify-content: space-between;
     margin-top: 100px;
+
     &_imgblock {
         @include columncontent;
         background-image: url(../images/bgflower2.png);
@@ -16,10 +17,10 @@
         gap: 18px;
         padding-left: 100px;
         padding-bottom: 120px;
-        
 
-        
+
+
     }
 
-   
+
 }

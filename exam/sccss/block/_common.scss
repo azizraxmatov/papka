@@ -1,17 +1,17 @@
 * {
-    box-sizing: border-box;
-    line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
- }
- 
- body {
-    margin: 0;
-    @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
-    @import url('https://db.onlinewebfonts.com/c/ead4092f880f75ff0883ced1856b2c37?family=SF+Pro+Rounded');
-    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:opsz,wght@9..144,900&family=Quicksand:wght@700&family=Roboto:wght@400;500;700&family=Work+Sans:ital,wght@1,200&display=swap');
- }
- 
- .container {
-    margin: 0 auto;
-    max-width: 1400px;
- }
+   box-sizing: border-box;
+   line-height: 1.15;
+   -webkit-text-size-adjust: 100%;
+}
+
+body {
+   margin: 0;
+   @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+   @import url('https://db.onlinewebfonts.com/c/ead4092f880f75ff0883ced1856b2c37?family=SF+Pro+Rounded');
+   @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:opsz,wght@9..144,900&family=Quicksand:wght@700&family=Roboto:wght@400;500;700&family=Work+Sans:ital,wght@1,200&display=swap');
+}
+
+.container {
+   margin: 0 auto;
+   max-width: 1400px;
+}

@@ -8,7 +8,7 @@
 
         @media(max-width:$phone) {
             justify-content: space-around;
-            
+
         }
 
         position: fixed;
@@ -46,6 +46,7 @@
         &_label {
             position: absolute;
             top: 25px;
+
             // display: none;
             @media (max-width:$phone) {
 
@@ -67,6 +68,7 @@
                     @media (max-width:$tablet) {
                         transform: translateX(0);
                     }
+
                     @media (max-width:$phone) {
                         transform: translateX(0);
                     }

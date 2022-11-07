@@ -1,106 +1,111 @@
 @mixin maincontent {
-    display: flex;
-    flex-direction: row;
-    // align-items:center;
-  }
-  
-  
-  @mixin innercontent {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
-
-  }
-  
-  @mixin columncontent {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  // align-items:center;
 }
-  
-  @mixin img {
-    background-repeat: no-repeat;
-    background-size: cover;  
-  }
-  
-  @mixin body {
-    font-family: "Barlow";
-    font-size: 16px;
-    line-height: 26px;
-  }
-  
-  @mixin link {
-    width: 274px;
-    height: 40px;
-    background-color: $prime-color-gr;
-    border-radius: 8px;
-    padding: 12px 30px 12px 30px;
-    color: white;
-    text-decoration: none;
-    font-family: $font-big;
-    font-size: 18px;
-    border-style: none;
-  }
-  @mixin link-dark {
-    width: 274px;
-    height: 40px;
-    background-color: $greycolor-800;
-    border-radius: 8px;
-    color: white;
-    font-family: $font-big;
-    font-size: 18px;
-    border-style: none;
-  }
-  @mixin link-light {
-    width: 274px;
-    height: 40px;
-    background-color: $prime-color-w;
-    border-radius: 8px;
-    color: black;
-    font-family: $font-big;
-    font-size: 18px;
-    border-style: none;
-    text-decoration: none;
-  }
-  @mixin linkhover {
-    background-color: $prime-color-w;
-    color: black;
-    border: 1px solid rgb(219, 219, 219);
 
-  }
-  @mixin linkhover-light {
-    background-color: $prime-color-gr;
-    color:  white;
-    border: 1px solid rgb(219, 219, 219);
 
-  }
-  @mixin linkhover-dark {
-    background-color: $prime-color-gr;
-    color: black;
-  }
-  
-  
-  // @mixin h1-text {
-  //   font-family: 'Fraunces';
-  //   font-size: 72px;
-  //   line-height: 72px;
-  //   font-weight: 900;
-  // }
-  
-  // @mixin h2-text {
-  //   font-family: 'Fraunces';
-  //   font-size: 40px;
-  //   line-height: 48px;
-  // }
-  
-  // @mixin h3-text {
-  //   font-family: 'Fraunces';
-  //   font-size: 32px;
-  //   line-height: 36px;
-  // }
-  
-  // @mixin h4-text {
-  //   font-family: 'Fraunces';
-  //   font-size: 24px;
-  //   line-height: 32px;
-  // }
+@mixin innercontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@mixin columncontent {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin body {
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@mixin link {
+  width: 274px;
+  height: 40px;
+  background-color: $prime-color-gr;
+  border-radius: 8px;
+  padding: 12px 30px 12px 30px;
+  color: white;
+  text-decoration: none;
+  font-family: $font-big;
+  font-size: 18px;
+  border-style: none;
+}
+
+@mixin link-dark {
+  width: 274px;
+  height: 40px;
+  background-color: $greycolor-800;
+  border-radius: 8px;
+  color: white;
+  font-family: $font-big;
+  font-size: 18px;
+  border-style: none;
+}
+
+@mixin link-light {
+  width: 274px;
+  height: 40px;
+  background-color: $prime-color-w;
+  border-radius: 8px;
+  color: black;
+  font-family: $font-big;
+  font-size: 18px;
+  border-style: none;
+  text-decoration: none;
+}
+
+@mixin linkhover {
+  background-color: $prime-color-w;
+  color: black;
+  border: 1px solid rgb(219, 219, 219);
+
+}
+
+@mixin linkhover-light {
+  background-color: $prime-color-gr;
+  color: white;
+  border: 1px solid rgb(219, 219, 219);
+
+}
+
+@mixin linkhover-dark {
+  background-color: $prime-color-gr;
+  color: black;
+}
+
+
+// @mixin h1-text {
+//   font-family: 'Fraunces';
+//   font-size: 72px;
+//   line-height: 72px;
+//   font-weight: 900;
+// }
+
+// @mixin h2-text {
+//   font-family: 'Fraunces';
+//   font-size: 40px;
+//   line-height: 48px;
+// }
+
+// @mixin h3-text {
+//   font-family: 'Fraunces';
+//   font-size: 32px;
+//   line-height: 36px;
+// }
+
+// @mixin h4-text {
+//   font-family: 'Fraunces';
+//   font-size: 24px;
+//   line-height: 32px;
+// }

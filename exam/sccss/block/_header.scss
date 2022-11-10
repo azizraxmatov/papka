@@ -1,6 +1,4 @@
 .commerce_header {
-    @include maincontent;
-
     &_inner {
         @media(max-width:$tablet) {
             justify-content: space-around;
@@ -8,7 +6,7 @@
 
         @media(max-width:$phone) {
             justify-content: space-around;
-
+        
         }
 
         position: fixed;
@@ -36,6 +34,7 @@
                 font-size: $h8-fontsize;
                 font-weight: 600;
                 color: $greycolor-800;
+                
             }
         }
 
@@ -80,7 +79,7 @@
             @include maincontent;
             gap: 10px;
             list-style: none;
-
+            
             @media (max-width:$phone) {
                 display: flex;
                 flex-direction: column;
@@ -90,7 +89,7 @@
                 left: 0;
                 top: 0;
                 line-height: 0;
-                background-color: rgb(10, 10, 10);
+               
                 height: 100vh;
             }
 
@@ -107,6 +106,9 @@
         }
 
         .header_menu-2 {
+            @media (max-width:$phone) {
+                display:none;
+            }
             @include maincontent;
             padding-right: 10px;
             gap: 11.95px;

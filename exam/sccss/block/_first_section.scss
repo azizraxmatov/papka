@@ -52,15 +52,24 @@
             justify-content: center;
             width: 223px;
             height: 126px;
+            background-image: url(../images/Ellipse-phone.png);
+            background-size: contain;
+            // transform: rotate(135deg);
+
         }
 
         padding-top: 100px;
         @include img;
-        background-image: url(../images/Ellipse\ 1.png);
-        width: 775px;
-        height: 801px;
+        background-size:contain;
+        background-image: url(../images/Ellipse1.png);
+        width: 1320px;
+        height: 1031.25px;
+        // left: 2629.46px;
+        // top: -18.37px;
+        // transform: rotate(135deg);  
+        right: 0px;
         position: relative;
-        border-radius:50px 0 0 450px;
+        // border-radius:50px 0 0 450px;
 
         @media(max-width:$tablet) {
             padding: 0;
@@ -72,8 +81,8 @@
         }
 
         &_img {
-            position: relative;
-            right: 40px;
+            position: absolute;
+            left: 0px;
 
             @media(max-width:$tablet) {
                 width: 290px;

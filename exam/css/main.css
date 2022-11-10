@@ -16,10 +16,6 @@ body {
   max-width: 1400px;
 }
 
-.commerce_header {
-  display: flex;
-  flex-direction: row;
-}
 .commerce_header_inner {
   position: fixed;
   top: 0;
@@ -107,7 +103,6 @@ body {
     left: 0;
     top: 0;
     line-height: 0;
-    background-color: rgb(10, 10, 10);
     height: 100vh;
   }
 }
@@ -125,6 +120,11 @@ body {
   flex-direction: row;
   padding-right: 10px;
   gap: 11.95px;
+}
+@media (max-width: 375px) {
+  .commerce_header_inner .header_menu-2 {
+    display: none;
+  }
 }
 
 @font-face {
@@ -173,11 +173,12 @@ body {
   padding-top: 100px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/Ellipse\ 1.png);
-  width: 775px;
-  height: 801px;
+  background-size: contain;
+  background-image: url(../images/Ellipse1.png);
+  width: 1320px;
+  height: 1031.25px;
+  right: 0px;
   position: relative;
-  border-radius: 50px 0 0 450px;
 }
 @media (max-width: 375px) {
   .hero_content .heroimg_block {
@@ -186,6 +187,8 @@ body {
     justify-content: center;
     width: 223px;
     height: 126px;
+    background-image: url(../images/Ellipse-phone.png);
+    background-size: contain;
   }
 }
 @media (max-width: 834px) {
@@ -199,8 +202,8 @@ body {
   }
 }
 .hero_content .heroimg_block_img {
-  position: relative;
-  right: 40px;
+  position: absolute;
+  left: 0px;
 }
 @media (max-width: 834px) {
   .hero_content .heroimg_block_img {
@@ -681,4 +684,11 @@ body {
   color: #9CA3AF;
   font-family: "SF Pro Display";
   font-size: 14px;
+}
+.footer_content .footer_nav .p {
+  color: #6B7280;
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  line-height: 19.6px;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
